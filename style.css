@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+        --Bright-orange: hsl(31, 77%, 52%);
+        --Dark-cyan: hsl(184, 100%, 22%);
+        --Very-dark-cyan: hsl(179, 100%, 13%);
+        --Transparent-white : hsla(0, 0%, 100%, 0.75);
+        --Very-light-gray : hsl(0, 0%, 95%);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    width: 60%;
+    height: 70%;
+    display: flex;
+}
+
+.section{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.content{
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 25px;
+}
+
+.section img {
+    width: 55px;
+}
+
+.section h2 {
+    width: 60%;
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section p {
+    width: 70%;
+    color: var(--Transparent-white);
+    line-height: 1.8;
+    font-size: 0.8rem;
+}
+
+
+.btn{
+    width: 50%;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 80px;
+    background-color: white;
+}
+
+.btn:hover{
+    background: none;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 23px;
+    border: 2px solid white; 
+}
+
+
+
+.section:first-child {
+    background-color: var(--Bright-orange);
+}
+
+.section:first-child .btn {
+    color: var(--Bright-orange);
+    font-weight: 700;
+}
+.section:first-child .btn:hover {
+    color: white;
+}
+.section:nth-child(2){
+    background-color: var(--Dark-cyan);
+}
+
+.section:nth-child(2) .btn{
+    color: var(--Dark-cyan);
+    font-weight: 700;
+}
+
+.section:nth-child(2) .btn:hover{
+    color: white;
+}
+
+.section:nth-child(3){
+    background-color: var(--Very-dark-cyan);
+}
+
+.section:nth-child(3) .btn{
+    color: var(--Very-dark-cyan);
+    font-weight: 700;
+}
+
+.section:nth-child(3) .btn:hover{
+    color: white;
+}
+
+/* -----------------------------Mobile--------------------------------- */
+
+@media screen and (max-width: 767px) {
+
+    body{
+       
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    .section{
+        width: 70%;
+        height: 90%;
+        margin: 0 auto;  
+    }
+
+    .content{
+        margin: 40px;
+    }
+    .btn{
+        width: 60%;
+        margin-top: 10px;
+    }
+    
+  }
+
+
